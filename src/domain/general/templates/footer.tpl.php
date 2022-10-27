@@ -2,6 +2,6 @@
 
 
 <div class="footer">
-    <a href="http://leantime.io" target="_blank">Powered By Leantime</a> - <?=$this->get("version");?></p>
+    <a href="#">ManageMate</a> - <?=$this->get("version");?></p>
 </div>
 

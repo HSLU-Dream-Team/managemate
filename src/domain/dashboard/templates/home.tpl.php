@@ -32,7 +32,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h3 class="todaysDate" style="padding-bottom:5px;"></h3>
-                            <h1 class="articleHeadline"><?=$this->__('text.hi') ?> <?=$currentUser['firstname'] ?></h1>
+                            <h1 class="articleHeadline"><?=$this->__('text.hi') ?> <?=$currentUser['firstname'] ?>!</h1>
                         </div>
                     </div>
                 </div>

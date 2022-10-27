@@ -66,6 +66,14 @@
             <li <?php if($module == 'dashboard' && $action == 'show') echo" class='active' "; ?>>
                 <a href="<?=BASE_URL ?>/dashboard/show"><?=$this->__("menu.dashboard") ?></a>
             </li>
+
+            <?php if ($login::userIsAtLeast($roles::$manager)) { ?>
+                <li <?php if($module == 'pmdashboard' && $action == 'showAll') echo" class='active' "; ?>>
+                    <a href="<?=BASE_URL ?>/pmdashboard/show"><?=$this->__("menu.pmdashboard") ?></a>
+                </li>
+            <?php } ?>
+
+
             <li <?php if($module == 'tickets' && ($action == 'showKanban' || $action == 'showAll'|| $action == 'showTicket')) echo"class=' active '"; ?>>
                 <a href="<?=$this->get('ticketMenuLink');?>"><?=$this->__("menu.todos") ?></a>
             </li>

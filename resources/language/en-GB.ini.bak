@@ -1,12 +1,12 @@
 language.code = "en"
 language.direction = "ltr"
 language.isRTL = "false"
-language.dateformat = "m/d/Y"
-language.jsdateformat = "mm/dd/yy"
+language.dateformat = "d/m/Y"
+language.jsdateformat = "dd/mm/yy"
 language.timeformat = "h:i A"
 language.jstimeformat = "h:mm A"
-language.momentJSDate = "MM/DD/YYYY"
-language.currency = "$"
+language.momentJSDate = "DD/MM/YYYY"
+language.currency = "£"
 
 #0 is Sunday, 1 is Monday
 language.firstDayOfWeek = "0"
@@ -34,15 +34,14 @@ language.nextText = "Next"
 language.prevText = "Prev"
 language.weekHeader = "Wk"
 language.columnFormatMonth = "ddd"
-language.columnFormatWeek = "ddd M/d"
-language.columnFormatday = "dddd M/d"
+language.columnFormatWeek = "ddd d/M"
+language.columnFormatday = "dddd d/M"
 
 headlines.all_times = "All Times"
 headlines.edit_time = "Edit Time"
 headlines.confirm_delete = "Confirm Delete"
 headlines.delete_time = "Delete Time "
 headlines.drive_impact = "Drive Impact"
-headlines.welcome_back = "Welcome Back"
 headlines.login = "Login"
 headlines.project_with_name = "Project:"
 headlines.no_active_sprint = "You don't have an active sprint!"
@@ -65,7 +64,7 @@ headline.delete_ticket = "Delete To-Do"
 headline.project = "Project: %1$s"
 headline.milestone = "<i class='fa fa-rocket'></i> Milestone"
 headline.milestones = "Milestones"
-headline.add_time_entry = "Track Time"
+headline.add_time_entry = "Track time"
 headline.all_projects = "All Projects"
 headline.new_project = "New Project"
 headline.project_timesheets = "Project Timesheets"
@@ -75,19 +74,7 @@ headline.overview = "Overview"
 headlines.todos = "To-Dos"
 headlines.delete_project_x = "Delete Project %1$s"
 headlines.duplicate_project_x = "Duplicate Project %1$s"
-headlines.logo = "Logo"
-headlines.team_member = "Current Team Members"
-headlines.add_more_users = "Add more users"
-headlines.assign_users_to_project = "Assign additional users to this project"
-headlines.no_articles_yet = "There are no articles yet"
-headline.your_projects = "Your Projects"
-headlines.your_todos = "Your To-Dos"
-headlines.home = "Home"
-headlines.project_dashboard = "Project Dashboard"
 
-headlines.page_forbidden = "You are not authorized to view this page"
-
-headlines.delete_project_x = "Delete Project %1$s"
 headline.lean_canvas = "Lean Canvas"
 headlines.research_next_big_product = "Research your next big product and collect your experiments here."
 headline.research_board = "Research Board"
@@ -139,17 +126,14 @@ headlines.twoFA_login = "Enter Two-factor Authentication Code"
 headlines.twoFA = "Two-factor Authentication"
 headlines.my_portfolio = "My Portfolio"
 headlines.import_ldap_users = "Import LDAP Users"
-headlines.documents = "Documents"
-headlines.latest_todos = "Latest To-Dos"
-
 
 subtitles.sprint_burndown = "Sprint Burndown"
 subtitles.backlog_burndown = "Backlog Burndown"
-subtitles.todos_this_week = "To-Dos this Week"
+subtitles.todos_this_week = "To-Dos this Week (<span class='thisWeekCounter'>%1$s</span>)"
 subtitles.todo = "To-Do"
 subtitles.track_time = "Track Time"
-subtitles.todos_later = "To-Dos Later"
-subtitles.project_progress = "Project Progress"
+subtitles.todos_later = "To-Dos Later (<span class='laterCounter'>%1$s</span>)"
+subtitles.project_progress = "Project Progress 1029"
 subtitles.milestone_progress = "Milestone Progress"
 subtitle.general = "General"
 subtitle.people = "People"
@@ -173,11 +157,6 @@ subtitles.user_info = "User Info"
 subtitles.file = "File"
 subtitles.summary = "Summary"
 subtitles.cummulative_flow = "Cumulative Flow"
-subtitles.organization = "Organization"
-subtitles.companydetails = "Company Details"
-subtitles.look_and_feel = "Look and Feel"
-subtitles.approvals = "Approvals"
-subtitles.project_updates = "Project Updates"
 
 notifications.no_template = "Could not find template"
 notifications.file_upload_success = "File was uploaded successfully"
@@ -214,20 +193,8 @@ notification.project_has_tickets = "The project still has To-Dos"
 notification.project_saved = "Project was saved successfully"
 notification.no_project_name = "Project name was not specified"
 notification.no_client = "Client was not selected"
-notification.wiki_created_successfully = "Wiki created successfully"
-notification.article_deleted = "Article deleted"
-notification.wiki_deleted = "Wiki deleted"
 
-notification.new_status_saved = "To-Do status list saved successfully"
-notification.error_saving_status = "There was an error saving the status."
-notification.at_least_one_status = "At least one status needs to be created."
-notification.error_installing = "There was an error installing the database, please check the error log for more details"
-
-notifications.user_was_added_to_project = "Team members were updated successfully"
-notifications.not_assigned_to_any_project= "You are not assigned to any projects. You can update your profile or relax and drink a cup of coffee"
-
-
-notification.project_has_tasks = "There are still to-dos in this project. Everything will be deleted"
+notification.project_has_tasks = "Can't delete project. There are still to-dos in this project. Please delete all to-dos first"
 notification.project_deleted = "Project successfully deleted"
 notifications.milestone_detached = "Milestone detached successfully"
 notifications.canvas_item_updates = "Item successfully saved"
@@ -263,8 +230,6 @@ notification.could_not_delete_event = "Could not delete event"
 notification.user_created = "New user created successfully"
 notification.user_exists = "This email address is already used"
 notification.passwords_dont_match = "Passwords don't match"
-notification.username_or_password_missing = "Username or password missing"
-notifications.problem_resetting_password = "There was a problem resetting the password"
 notification.no_valid_email = "Not a valid email address"
 notification.enter_email = "Please enter an email address"
 notification.enter_password = "Please enter a password"
@@ -294,13 +259,6 @@ notification.form_token_incorrect = "Form token incorrect, please try again"
 notifications.could_not_reset_limit_reached = "You have reached the password reset limit for your account, please use the last reset link to reset your password"
 notifications.project_copied_successfully = "The project was copied successfully,<br/><a href='%1$s'>click here to open it</a>"
 
-notification.article_updated_successfully = "Article was updated successfully"
-notification.article_created_successfully = "Article was created successfully"
-
-notifications.ical_success = "iCal URL created successfully"
-notifications.ical_removed_success = "iCal URL was removed"
-
-
 short_notifications.effort_updated = "Effort successfully updated"
 short_notifications.priority_updated = "Priority successfully updated"
 short_notifications.milestone_updated = "Milestone successfully updated"
@@ -316,8 +274,6 @@ short_notifications.date_updated = "Date was changed"
 
 short_notifications.remaining_hours_updated = "Remaining Hours updated!"
 short_notifications.planned_hours_updated = "Planned Hours updated!"
-
-short_notifications.url_copied = "Url copied"
 
 input.placeholders.enter_email ="Enter email address"
 input.placeholders.enter_password ="Enter password"
@@ -349,8 +305,6 @@ input.placeholders.enter_new_password ="Enter new password"
 input.placeholders.confirm_password = "Confirm password"
 input.placeholders.choose_project = "Choose a project"
 input.placeholders.choose_todo = "Choose to-do"
-input.placeholders.wiki_title = "Enter a title for your wiki"
-input.placeholders.enter_title_of_todo = "Enter the title for your To-Do"
 
 buttons.reload = "Reload"
 buttons.login = "Login"
@@ -414,10 +368,9 @@ links.start_work = "Start Work"
 links.stop_work_started_at = "Stop Work, <span>started at <span class='time'>%1$s</span></span>"
 links.go_back = "Go Back"
 links.add_new_comment = "Add a new comment"
-links.add_new_report = "Update Status"
 links.reply = "Reply"
 links.delete = "Delete"
-links.add_todo = "<span class='fa fa-thumbtack'></span> Add To-Do"
+links.add_todo = "<span class='fa fa-pushpin'></span> Add To-Do"
 links.add_todo_no_icon = "Add To-Do"
 links.add_milestone = "<span class='fa fa-map'></span> Add Milestone"
 links.add_sprint = "<span class='fa fa-rocket'></span> Create Sprint"
@@ -450,7 +403,7 @@ links.full_canvas = "<i class='fas fa-graduation-cap'></i> Full Lean Canvas"
 links.create_plan = "<i class='fa fa-plus'></i> Create New Board"
 links.edit_board = "<i class='fa fa-edit'></i> Edit Board</a>"
 links.add_new_canvas_item = "<span class='fa fa-plus'></span> Add New"
-links.delete_board = "<i class='fa fa-trash'></i> Delete Board"
+links.delete_board = "<i class="fa fa-trash"></i> Delete Board"
 links.delete_sprint = "Delete Sprint"
 links.new_with_icon = "<i class='glyphicon glyphicon-th'></i> New"
 links.my_timesheets = "My Timesheets"
@@ -461,20 +414,6 @@ links.back_to_login = "Back to login"
 links.download = "<i class='fa fa-download'></i> Download"
 links.duplicate_project = "<i class='fa fa-copy'></i> Duplicate Project"
 links.open_project = "<i class='fa fa-open'></i> Open Project"
-links.add_status = "<i class='fas fa-plus-circle'></i>  Add Status"
-links.add_remove_col = "<i class='fas fa-plus'></i> Add/Remove Columns"
-link.edit_wiki = "<i class='fa fa-edit'></i> Edit this wiki"
-link.new_wiki = "<i class='fas fa-plus'></i> Create a new wiki"
-link.create_article = "Create Article"
-links.edit_article = "<i class='fa fa-edit'></i> Edit Article"
-links.copy_url = "<i class='fa fa-link'></i> Copy Url"
-links.delete_wiki = "Delete Wiki"
-links.delete_article = "Delete Article"
-links.add_to_timesheets = "<span class='fa fa-clock-o'></span> Add to Timesheet"
-links.read_more = "Read More"
-links.add_team_member = "Add Team Member"
-links.create_user = "Create new user"
-
 
 menu.my_timesheets = "<span class='head-icon fa fa-clock-o'></span><span class='headmenu-label'>My Timesheets</span>"
 menu.my_calendar = "<span class='head-icon fa-regular fa-calendar'></span><span class='headmenu-label'>My Calendar</span>"
@@ -506,9 +445,7 @@ menu.project_settings = "<span class='fa fa-fw fa-cog'></span> Project Settings"
 menu.reports = "<span class='fa fa-fw fa-chart-bar'></span> Reports"
 menu.community = "<span class='fa fa-fw fa-comments'></span> Community Forum"
 menu.my_portfolio = "<span class='head-icon fa fa-briefcase'></span><span class='headmenu-label'>My Portfolio</span>"
-menu.documents = "<span class='fa fa-fw fa-book'></span> Documents"
-menu.home = "<span class='head-icon fa fa-home'></span><span class='headmenu-label'>Home</span>"
-text.hi = "Hi"
+
 text.sprint_is_short_iteration = "A sprint is a short iteration during which To-Dos are completed and released."
 text.update_sprint_chart_add_todos = "This chart will be updated then. In the meantime start adding To-Dos to your sprint."
 text.take_the_day_off = "Take the day off or start working through the backlog."
@@ -524,15 +461,10 @@ text.no_subtasks = "You don't have any subtasks"
 text.create_new_subtask = "Create a new subtask:"
 text.written_on_by = "Written on %1$s at %2$s by %3$s %4$s"
 text.written_on = "%1$s at %2$s"
-text.no_comments = "☕ No comments so far."
-text.no_updates = "☕ No updates yet."
+text.no_comments = "Nothing so far"
 text.comments = "Comments"
 text.num_comments = "<span class='fa fa-regular fa-comments'></span> %1$s Comments"
-text.full_name = "%1$s %2$s"
-text.no_files = "No files uploaded yet"
-text.here_are_news = "News from your Leantime projects"
-text.create_new_content = "Create your first article."
-text.create_new_wiki = "Create your first wiki."
+
 text.last_modified = "Last Modified %1$s"
 text.are_you_sure_delete_canvas_item = "Are you sure you would like to delete this item?"
 text.are_you_sure_delete_retro = "Are you sure you would like to delete this retrospective?"
@@ -541,9 +473,6 @@ text.are_you_sure_delete_idea_board = "Are you sure you would like to delete thi
 text.are_you_sure_delete_retro_board = "Are you sure you would like to delete this retrospective board?"
 text.are_you_sure_delete_feedback = "Are you sure you would like to delete this feedback?"
 text.are_you_sure_delete_sprint = "Are you sure you would like to delete this sprint?"
-text.are_you_sure_delete_wiki = "Are you sure you would like to delete this wiki? This will remove all articles as well."
-text.are_you_sure_delete_article = "Are you sure you would like to delete this article?"
-
 text.use_milestone_to_track_retro = "Use a milestone to track progress towards your retrospectives."
 text.use_milestone_to_track_leancanvas = "Use a milestone to track progress towards your lean canvas."
 text.use_milestone_to_track_idea = "Use a milestone to track progress towards your ideas."
@@ -558,10 +487,9 @@ text.confirm_research_board_deletion = "Are you sure you would like to delete th
 text.confirm_user_deletion = "Are you sure you would like to delete this user?"
 text.mattermost_instructions = " This integration will post update notifications to the channel of your choice.<br/>Follow the instructions <a href='https://docs.mattermost.com/developer/webhooks-incoming.html#simple-incoming-webhook' target='_blank'>here to get an Incoming Webhook URL</a> from Mattermost. Then paste the link into the form to the right and click Save."
 text.slack_instructions = "This integration will post update notifications to the channel of your choice.<br/>Follow the instructions <a href='https://get.slack.help/hc/en-us/articles/115005265063-Incoming-WebHooks-for-Slack' target='_blank'>here to get an Incoming Webhook URL</a> from Slack. Then paste the link into the form to the right and click Save."
-text.choose_access_for_users = "Check or uncheck the users you want to add/remove. You can learn more about the roles at <a href='https://docs.leantime.io/#/using-leantime/user-management?id=roles' target='_blank'>https://docs.leantime.io</a>"
+text.choose_access_for_users = "Choose the users that will have access to this project."
 text.expected_to_finish_by = "Expected to finish by"
 text.zulip_instructions = "This integration will post update notifications to the stream and topic of your choice.<br/>Follow the instructions <a href='https://zulipchat.com/help/add-a-bot-or-integration' target='_blank'>here to create a new bot</a>. Then paste the information into the form to the right and click Save."
-text.discord_instructions = "This integration will post update notifications to the channel of your choice.<br/>Follow the instructions <a href='https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks' target='_blank'>here to create a new webhook(s)</a>, then paste the link(s) into the fields to the right and click Save."
 text.no_conclusion_yet = "<i>No conclusion yet</i>"
 text.no_lean_canvas_content = "The lean canvas will guide your through a customer, problem and solution fit.<br/>We suggest you create a new canvas for every product you start.<br/><br/><a href='javascript:void(0)' class='addCanvasLink btn btn-primary'><i class='fa fa-plus'></i> Create new plan</a>"
 text.lean_canvas_is_adapted_message = "Lean Canvas is adapted from <a href='https://strategyzer.com/' target='_blank'>Business Model Canvas</a> and is licensed under the Creative Commons Attribution-Share Alike 3.0"
@@ -579,13 +507,13 @@ text.this_is_where_you_spend_most_time = "This is where you’ll spend most of y
 text.full_lean_canvas_helper_content = "The full research board will take you through the full idea validation process.<br/>On this page, you'll again address your Customer Segment, Problem, Solution (but don't worry, if you filled that out on the Simple board, you'll see it again here!).<br/><br/>From there, you'll move into<br/>Unique Value Proposition (What makes your idea better than other offerings?),<br/>Distribution Channels (How will you get your solution to your customers?)<br/>Revenue Streams (How will your solution make money?)<br/>Cost Structure (How much is your solution worth?)<br/>Key Metrics (How will you measure success?)<br/>and Unfair Advantage (What do you have that will help you succeed against the competition?)<br/>Answering these questions are designed to promote success, mitigate failure, and allow you to track and validate your assumptions. Being Lean is about eliminating waste <br/>and working to build products, business, and solutions that your customers need."
 text.idea_board_helper_content = "This is the place to collect all of your ideas. Discuss new ones with your team and attach Milestones to see progress towards your ideas."
 text.kanban_helper_content = "Kanban is the Japanese word for 'card'. Kanban boards were started by Toyota engineers in the 40s with Lean manufacturing.<br/>It's used to visually share information and work progress quickly.<br/>Kanban boards are useful to visualize work and status, to help manage active or in progress work, manage work flow and act quickly towards lean improvements.<br/><br/>Start the tour to see how our Kanban board works or click close to get started!"
-text.my_timesheets_helper_content = "Timesheets are the place to track the actual hours worked on a To-Do.<br/>This is helpful for billing purpose but also to validate how well you are planning your tasks upfront.<br/>Overtime leantime can adjust due dates to account for planning discrepencies."
+text.my_timesheets_helper_content = "Timesheets are the place to track the actual hours worked on a To-Do.<br/> This is helpful for billing purpose but also to validate how well you are planning your tasks upfront.<br/>Overtime leantime can adjust due dates to account for planning discrepencies."
 text.new_project_helper_content = "<p>This is the place you'll describe, define, and set the parameters for your project. This is important as it's the piece that communicates to the<br/>entire team what the project priorities, expectations, and guidelines are.</p><p><br/><em>Things to think about here: the 4Cs.<br/>Be Clear, be Concise, Complete and Credible.<br/><br/></em></p><p>Mastering these things into your project descriptions keeps everyone on the same page and helps to minimize risks of error or missteps.</p><br/>Time to get started!<br/><br/>"
 text.not_found_helper_content = "<p>We don't have content for this page yet.<br/>Please use our \"Need Help\" link on the bottom to learn more about the things you can do here.</p>"
 text.retros_helper_content = "<p>Retrospectives are quick reflections about the work, team functioning, and of course progress.<br/>This is where your team can take a moment to hone in on what went well, what didn't go well and what could be done differently next time.<br/>We recommend running a review meeting in regular intervals, or at minimum, at the end of each Milestone.<br/></p>"
-text.roadmap_helper_content = "<p>Roadmaps are helpful for scaling down large projects into smaller and more manageable chunks.<br/><br/></p><p>To create your roadmap, we recommend setting milestones that can be achieved within a 3 month time span.</p><p>Milestones are checkpoints on the way to project completion.<br/>Simply speaking: If you're taking a cross country road trip, then each state you pass through could be a milestone.<br/><br/>Click \"Add Milestone\" on the top left hand side to get started. Set the date on this tab or in the roadmap chart itself by clicking and dragging the milestone within the calendar.</p>"
+text.roadmap_helper_content = "<p>Roadmaps are helpful for scaling down large projects into smaller and more manageable chunks.<br/><br/></p><p>To create your roadmap, we recommend setting milestones that can be achieved within a 3 month time span.</p><p>Milestones are checkpoints on the way to project completion.<br/> Simply speaking: If you're taking a cross country road trip, then each state you pass through could be a milestone.<br/><br/>Click \"Add Milestone\" on the top left hand side to get started. Set the date on this tab or in the roadmap chart itself by clicking and dragging the milestone within the calendar.</p>"
 text.show_clients_helper_content = "<p>Clients/Products organize your Projects into categories and allow you to isolate different groups.<br/><br/></p><p>As a consultant, you work with clients already and this would be the place to organize them.</p><p>If you are a Product Team you can use this section to organize and isolate your departments (marketing, sales, operations etc).</p>"
-text.show_projects_helper_content = "<p>Projects are the heart of your business and leantime! Change, development, goals, and anything you can build or dream of will involve projects.<br/>Project management is simply the process of ensuring that your projects are delivered timely, correctly, and with real business value.<br/><br/>This is where your Projects will live. Your projects page will allow you to create a project, quickly see to do numbers, hours, budget dollars and the client associated with the project.<br/><br/>Use this page for a quick overview of all your projects.<br/><br/></p>"
+text.show_projects_helper_content = "<p>Projects are the heart of your business and leantime! Change, development, goals, and anything you can build or dream of will involve projects.<br/> Project management is simply the process of ensuring that your projects are delivered timely, correctly, and with real business value.<br/><br/>This is where your Projects will live. Your projects page will allow you to create a project, quickly see to do numbers, hours, budget dollars and the client associated with the project.<br/><br/>Use this page for a quick overview of all your projects.<br/><br/></p>"
 text.simple_lean_canvas_helper_content = "<p>The foundation of any project is rooted here -- in your research. On this board, you'll focus on building for your customer by using the Problem Solution Fit.<br/><br/>In Problem Solution fit, you'll start with identifying who your customer is. Think about demographics, what they do, and what they need.<br/>Next, you'll identify their struggles or problem. Finally, you'll add how you plan to solve their problem.<br/><br/>Building products, projects, or offerings that solve customer problems help promote product success and mitigate failure.<br/><br/>You may find that you have multiple ways to solve their problems. That's great! You can put them here or move to the Idea Board to keep track of those ideas.<br/>Once you've got this started, the next step will be to validate your assumptions about your customer, their problems, and your solutions.<br/>You can add that here or move<br/>to your Full Research Board to start collecting more information.</p>"
 text.new_db_version = "A new version has been installed. To use Leantime you will need to update your database.<br/><br/><strong>Please make sure to backup your database before performing this update!</strong><br/>This may take a few minutes."
 text.update_was_successful = "Update was successful you can now login. <a href='%1$s'>Go to login</a>"
@@ -598,18 +526,6 @@ text.twoFA_already_enabled = "Two-factor authentication is already enabled for y
 text.twoFA_enabled = "Your account has two-factor authentication <strong>enabled</strong>."
 text.twoFA_disabled = "Your account has two-factor authentication <strong>disabled</strong>."
 text.twoFA_manage = "<span class='fa fa-lock'></span> Manage two-factor authentication"
-text.who_can_access = "Choose who is allowed to view this project. By default users will inherit the roles they have been set up with. You can change these roles under the 'Team' Tab"
-text.ical_export_description = "Here you can create a unique calendar URL that will allow you to integrate your Leantime calendar in any application that supports the 'iCal' format. "
-text.you_ical_url = "Your calendar URL is below. <br /> Please note that anybody with this URL can access the calendar. Keep it secret as you would a password."
-text.no_url = "Generate a URL by clicking the button below"
-buttons.generate_ical_url = "Generate iCal URL"
-links.remove_access = "Remove Calendar Access"
-
-labels.defaultaccess = "Who can access this project?"
-labels.everyone_in_org = "Everyone in this organization"
-labels.everyone_in_client = "Everyone assigned to this client"
-labels.only_chose = "Only the users I choose under 'Team'"
-
 
 label.id = "ID"
 label.due = "Due By:"
@@ -650,9 +566,8 @@ label.description = "Description"
 label.author = "Author"
 label.editor = "Assigned to"
 label.filter_by_user = "Filter by user"
-label.assign_to_me = "Assign to me"
-label.ticket_date = "Last Update"
-label.due_date = "Due Date"
+label.ticket_date = "Last update"
+label.due_date = "Due date"
 label.due_icon = "<span class='fa fa-regular fa-calendar'></span>"
 label.title_idea_board = "What is the title of your idea board?"
 label.topic_idea_board = "What is the topic of your idea board?"
@@ -775,7 +690,6 @@ label.firstname = "First name"
 label.lastname = "Last name"
 label.no_clients = "Not assigned to a client"
 label.password = "Password"
-label.please_enter_password = "Please enter you password"
 label.new_password = "New Password"
 label.old_password = "Old Password"
 label.password_repeat = "Repeat Password"
@@ -785,25 +699,19 @@ label.project_assignment = "Project Assignment"
 label.overview = "Overview"
 label.active = "Active"
 label.inactive = "Inactive"
-label.receive_notifications = "Receive email notifications"
+label.receive_notifications = "Receive notifications"
 label.upload = "Upload"
 label.ondate = "on"
 label.label = "Label"
 label.company_name = "Company Name"
 label.theme_color = "Theme Color"
-label.upload_new_logo = "Upload a new logo (220px x 40px)"
+label.upload_new_logo = "Upload a new logo (260px x 60px)"
 label.logo = "Logo"
 label.roles.client = "Client"
 label.roles.developer = "Team Member"
 label.roles.clientManager = "Client Manager"
 label.roles.manager = "Company Manager"
 label.roles.admin = "Administrator"
-
-label.roles.readonly = "Read Only"
-label.roles.commenter = "Commenter"
-label.roles.editor = "Editor"
-label.roles.owner = "Owner"
-
 label.client = "Client"
 label.filename_fileexport = "File-Export"
 label.progress = "Progress"
@@ -822,62 +730,11 @@ label.assignSameUsers = "Assign the same users"
 label.newProjectName = "New Project Name"
 label.client_id = "Client ID"
 label.ticket_id = "Ticket ID"
-label.primary_color = "Primary Color"
-label.secondary_color = "Secondary Color"
-label.wiki = "Wiki"
-label.wiki_title = "Title"
-label.current_wiki = "Current Wiki"
-label.ical_export = "Integrate Calendar"
-
-links.delete_article = "Delete Article"
 
 tabs.todosettings = "To-Do Status Settings"
 label.sortindex = "Sort Position"
 label.reportType = "Report As"
 label.showInKanban = "Show on Kanban Board"
-links.my_portfolio = "<span class='fa fa-briefcase'></span> View Portfolio"
-
-
-
-label.send_telemetry = "Help make Leantime better!"
-label.telemetry_background = "Send anonymous data <a href='https://docs.leantime.io/#/using-leantime/company-settings?id=telemetry' target='_blank'>about number of projects, users, tickets etc to Leantime.io</a>. No personal identifieble data will be sent and it will be impossible for us to track individual users."
-
-label.blue = "Blue"
-label.yellow = "Yellow"
-label.green = "Green"
-label.red = "Red"
-label.grey = "Grey"
-
-labels.all_projects = "All Projects"
-label.dates = "Due Dates"
-
-
-labels.createdBy_on = "Created by %s %s on %s, modified on %s"
-labels.tags = "Tags"
-
-# Cron setup
-label.messages_frequency = "Email frequency"
-label.choose_option = "Choose your option"
-label.5min = "5 minutes"
-label.15min = "15 minutes"
-label.30min = "Half an hour"
-label.1h = "1 hour"
-label.3h = "3 hours"
-label.6h = "6 hours"
-label.12h = "12 hours"
-label.24h = "1 day"
-label.48h = "2 days"
-label.1w = "1 week"
-
-label.theme = "Theme"
-label.auto = "Auto";
-label.light = "Light"
-label.dark = "Dark"
-
-label.draft = "Draft"
-label.published = "Published"
-label.draft_parenth = "(draft)"
-
 
 dropdown.how_big_todo = "How large is this To-Do?"
 dropdown.select_priority = "What is the priority of this task?"
@@ -936,12 +793,12 @@ email_notifications.new_file_general_message = "%1$s added a new file"
 email_notifications.new_file_general_cta = "Click here to see it"
 
 email_notifications.new_comment_todo_subject = "New comment in To-Do [%1$s] - %2$s"
-email_notifications.new_comment_todo_message = "%1$s added a new comment to the To-Do '%2$s':<br/><br/><i>%3$s</i><br/><br/>"
-email_notifications.new_comment_todo_cta = "Click here to open the conversation"
+email_notifications.new_comment_todo_message = "%1$s added a new comment to the To-Do '%2$s'"
+email_notifications.new_comment_todo_cta = "Click here to see it"
 
 email_notifications.new_comment_project_subject = "New comment in Project [%1$s] - %2$s"
 email_notifications.new_comment_project_message = "%1$s added a new comment to the project '%2$s'"
-email_notifications.new_comment_project_cta = "Click here to open the conversation"
+email_notifications.new_comment_project_cta = "Click here to see it"
 
 email_notifications.todo_update_subject = "One of your To-Dos was updated [%1$s] - %2$s"
 email_notifications.todo_update_message = "%1$s updated the To-Do: '%2$s'"
@@ -953,7 +810,6 @@ email_notifications.project_update_cta = "Click here to see it"
 
 email_notifications.project_created_subject = "You have been added to a new project"
 email_notifications.project_created_message = "A new project was created and you are on it! Project name is <a href='%1$s'>[%2$s] - %3$s</a> and it was created by %4$s<br/>"
-
 
 email_notifications.canvas_board_edited = "One of your research boards was edited."
 email_notifications.canvas_item_update_message = "%1$s updated the item '%2$s'"
@@ -1008,8 +864,6 @@ email_notifications.new_user_message = "%1$s created a new user account for you.
 email_notifications.password_reset_subject = "Leantime Password Reset"
 email_notifications.password_reset_message = "We've received your e-mail requesting your Leantime password be reset.<br/><br/>If you would like to reset your password, please click on this link:<br/><a href='%1$s' target='_blank'>Reset Password</a><br/><br/>If you did not request a password reset, please ignore this message.<br/><br/>Thank you."
 
-email_notifications.latest_updates_subject = "Leantime - Latest updates"
-
 tabs.ticketDetails = "Details"
 tabs.subtasks = "Subtasks"
 tabs.files = "Files"
@@ -1019,8 +873,6 @@ tabs.projectdetails = "Project Details"
 tabs.Integrations = "Integrations"
 tabs.files_with_count = "Files (%1$s)"
 tabs.discussion_with_count = "Discussion (%1$s)"
-tabs.projectaccess = "User Access"
-tabs.team = "Team"
 
 tooltip.how_many_hours_remaining = "How many hours do you think are left on this To-Do"
 
@@ -1075,9 +927,73 @@ tour.your_todos_text = "Here are the to-dos currently assigned to you.<br/>You'l
 tour.congratulations = "Congratulations!"
 tour.congratulations_dashboard_text = "This completes the dashboard tour! Great work!"
 tour.kanban = "Kanban"
-tour.kanban_text = "These lanes represent the status of your To-Dos.<br/>New, blocked, in progress, needs approval, done."
+tour.kanban_text = "These lanes represent the status of your To-Dos.<br/> New, blocked, in progress, needs approval, done."
 tour.drag_drop = "Drag & Drop"
 tour.drag_drop_text = "You can drag and drop these cards from one state to the next.<br/>A click on the headline will bring you to the details of this to-do."
 tour.change_views = "Change Views"
 tour.change_views_text = "These buttons let you switch between table and kanban view"
 tour.congratulations_kanban_text = "You have completed the tour!<br/>If you need more help. Visit our knowledge base at <a href='https://help.leantime.io' target='_blank'>https://help.leantime.io</a><br/><br/>Don't hesitate to reach out to our support team for any additional help!<br/>We are here to make your life easier."
+
+#Missing options
+#===============
+#email_notifications.latest_updates_subject
+#headlines.add_more_users
+#headlines.logo
+#headlines.page_forbidden
+#headlines.team_member
+#headlines.welcome_back
+#label.12h
+#label.15min
+#label.1h
+#label.1w
+#label.24h
+#label.30min
+#label.3h
+#label.48h
+#label.5min
+#label.6h
+#label.assign_to_me
+#label.auto
+#label.blue
+#label.choose_option
+#label.dark
+#label.green
+#label.grey
+#label.light
+#label.messages_frequency
+#label.please_enter_password
+#label.primary_color
+#label.red
+#label.roles.commenter
+#label.roles.editor
+#label.roles.owner
+#label.roles.readonly
+#label.secondary_color
+#label.send_telemetry
+#label.telemetry_background
+#label.theme
+#label.yellow
+#labels.defaultaccess
+#labels.everyone_in_client
+#labels.everyone_in_org
+#labels.only_chose
+#links.add_remove_col
+#links.add_status
+#notification.at_least_one_status
+#notification.error_installing
+#notification.error_saving_status
+#notification.new_status_saved
+#notification.username_or_password_missing
+#notifications.not_assigned_to_any_project
+#notifications.problem_resetting_password
+#notifications.user_was_added_to_project
+#subtitles.companydetails
+#subtitles.look_and_feel
+#subtitles.organization
+#tabs.projectaccess
+#tabs.team
+#text.discord_instructions
+#text.full_name
+#text.here_are_news
+#text.no_files
+#text.who_can_access
